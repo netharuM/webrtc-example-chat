@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeerB</title>
+    <script defer src="/peerB/peerB.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div>
+        <textarea id="offer-txt-area" style="width: 90vw" rows="6"></textarea>
+        <button id="submit-offer-btn">submit offer sdp</button>
+    </div>
+
+    <hr />
+
+    <div style="display: flex;flex-direction: column;">
+        <label for="answer-txt-area">answer</label>
+        <textarea id="answer-txt-area" readonly style="width: 90vw" rows="6"></textarea>
+    </div>
+
+    <div class="chat-box-container">
+        <label for="chatbox">ChatBox</label>
+        <div id="chat-box" class="chat-box">
+
+        </div>
+        <form class="msg-input-container" id="msg-input-form">
+            <input type="text" id="msg-input-txt" class="msg-input-txt" placeholder="Input the message">
+            <button type="submit">send</button>
+        </form>
+    </div>
+</body>
+
+</html>
